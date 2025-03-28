@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting... / पुनर्निर्देशन...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Alkatra:wght@400..700&family=Amita:wght@400;700&family=Berkshire+Swash&family=Eczar:wght@400..800&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Fredoka:wght@300..700&family=Gotu&family=Jaini&family=Kalam:wght@300;400;700&family=Khand:wght@300;400;500;600;700&family=Laila:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Martel:wght@200;300;400;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ranga:wght@400;700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Rozha+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap" rel="stylesheet">
+    <meta http-equiv="refresh" content="10;url=https://wonderfuljainism.com">
+    <script>
+        function redirectNow() {
+            window.location.href = "https://wonderfuljainism.com";
+        }
+
+        let timeLeft = 10;
+        function updateCountdown() {
+            const countdownElement = document.getElementById("countdown");
+            countdownElement.innerText = `Redirecting in ${timeLeft} seconds... / ${timeLeft} सेकंड में पुनर्निर्देशन...`;
+            if (timeLeft === 0) {
+                redirectNow();
+            } else {
+                timeLeft--;
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+        setTimeout(updateCountdown, 1000);
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .div2 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: linear-gradient(rgb(134, 0, 0),rgb(29, 29, 29));
+            padding: 20px;
+            width: 80%;
+        }
+        .div2 img {
+            width: 250px;
+            height: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 500px;
+        }
+        h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: white;
+            font-family: "Berkshire Swash", serif;
+            font-weight: 100;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: white;
+            font-family: "Reddit Sans", sans-serif;
+        }
+        button {
+            padding: 12px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: 0.5s ease-in;
+        }
+        button:hover {
+            background-color: red;
+        }
+
+        .div3{
+            display: flex;
+            flex-direction: row;
+        }
+        .div1{
+            width: 10%;
+            background: white;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .div1 img{
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .div1{
+                height: 10vh;
+                flex-direction: row;
+                width: 100%;
+            }
+            .div2{
+                height: 80vh;
+                width: 100%;
+            }
+            h2 {
+                font-size: 23px;
+            }
+            p {
+                font-size: 18px;
+            }
+            button {
+                font-size: 16px;
+                padding: 10px 16px;
+            }
+            .div3{
+                flex-direction: column;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="div3">
+    <div class="div1">
+        <img src="./p4.jpg" alt="">
+        <img src="./p3.png" alt="">
+        <img src="./p2.jpg" alt="">
+        <img src="./p1.JPG" alt="">
+    </div>
+    <div class="div2">
+    <img src="./logo.png" alt="Website Logo">
+    <h2>
+        This website has moved to "wonderfuljainism.com" & you will be redirected there...<br>
+        यह वेबसाइट "wonderfuljainism.com" पर स्थानांतरित हो गई है और आपको वहां प्रेषित किया जा रहा है...
+    </h2>
+    <p id="countdown">Redirecting in 10 seconds... / 10 सेकंड में पुनर्निर्देशन...</p>
+    <p>
+        If you don't want to wait, click the button below.<br>
+        यदि आप इंतजार नहीं करना चाहते, तो नीचे दिए गए बटन पर क्लिक करें।
+    </p>
+    <button onclick="redirectNow()">Go to wonderfuljainism.com now / अभी जाएं</button>
+    </div>
+    <div class="div1">
+        <img src="./p1.JPG" alt="">
+        <img src="./p2.jpg" alt="">
+        <img src="./p3.png" alt="">
+        <img src="./p4.jpg" alt="">
+    </div>
+    </div>
+</body>
+</html>
